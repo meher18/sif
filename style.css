@@ -1,0 +1,364 @@
+body {
+  background-color: #f3f3f3;
+}
+.container {
+  padding: 20px 10%;
+}
+
+.invoice-block {
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0px 0px 50px 10px rgb(187, 183, 183);
+}
+.invoice-block .header-block {
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo img {
+  width: 150px;
+  object-fit: contain;
+}
+.brand-logo {
+  font-weight: 700;
+  font-size: 3.7rem;
+}
+.details-block {
+  margin: 35px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.details-block > div {
+  width: 25%;
+}
+.to-details {
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: #6c6868;
+}
+.invoice-details {
+  font-size: 0.9em;
+  font-weight: 650;
+  color: #6c6868;
+  padding-left: 20px;
+}
+.item-container {
+  width: 100%;
+}
+table {
+  border-bottom: 2px solid rgb(163, 163, 163) !important;
+  width: 100%;
+}
+table th {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.product-block {
+  margin-top: -20px !important;
+  width: 80%;
+}
+.product-name {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.product-description {
+  width: 96%;
+  text-align: left;
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 0.9rem;
+  color: rgb(97, 95, 95);
+}
+thead {
+  border: 2px solid rgb(163, 163, 163) !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+table tbody {
+  padding-top: 50px !important;
+}
+tbody > tr > td {
+  padding-top: 30px !important;
+  font-weight: bolder;
+}
+.payment-block {
+  display: grid;
+  grid-template-columns: 65% auto;
+  grid-auto-flow: row;
+}
+
+.payment-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.payment-logo {
+  margin: 5px 0px;
+}
+.payment-logo img {
+  width: 110px;
+  margin-left: -10px;
+}
+.payment-details {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(100, 98, 98);
+}
+.sub-total-block {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.sub-t-h {
+  font-weight: bold;
+  color: rgb(100, 98, 98);
+}
+.sub-t-p {
+  font-weight: bold;
+  color: black;
+}
+.vat-t-h {
+  font-weight: bold;
+  color: rgb(100, 98, 98);
+}
+.vat-t-p {
+  font-weight: bold;
+  color: black;
+}
+.vat-block {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(158, 214, 67);
+  border-top: 2px solid rgb(163, 163, 163);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.t-s-block {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 55% auto;
+  align-items: center;
+}
+.t-heading {
+  font-weight: 900;
+}
+.t-terms {
+  font-weight: 600;
+  color: #6c6868;
+  font-size: 0.9rem;
+}
+.signature {
+  margin-left: 30%;
+}
+.s-sign img {
+  width: 250px;
+}
+.s-name {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.invoice-footer {
+  border-top: 2px solid rgb(163, 163, 163) !important;
+  margin-top: 40px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.invoice-footer > div {
+  display: inline-flex;
+}
+.f-phone {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.f-email {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.f-address {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.f-phone img {
+  width: 50px;
+}
+.f-email img {
+  width: 50px;
+}
+.f-address img {
+  width: 50px;
+}
+.numbers {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #6c6868;
+}
+.emails {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #6c6868;
+}
+.addresses {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #6c6868;
+}
+
+
+
+
+
+
+
+
+
+
+/*  for resposive mobile view */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .invoice-block {
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 50px 10px rgb(187, 183, 183);
+  }
+
+  .logo img {
+    width: 110px;
+    object-fit: contain;
+  }
+  .brand-logo {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .details-block {
+    margin: 35px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  }
+  .details-block > div {
+    margin: auto;
+    width: 90%;
+  }
+  .to-details {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: #6c6868;
+  }
+  .invoice-details {
+    padding-top: 20px;
+    font-size: 0.9em;
+    font-weight: 650;
+    color: #6c6868;
+    padding-left: 0;
+  }
+  .item-container {
+    width: 100%;
+  }
+
+  .product-block {
+    margin-top: -20px !important;
+    width: 85%;
+  }
+  .product-name {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .product-description {
+    width: 96%;
+    text-align: left;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 0.9rem;
+    color: rgb(97, 95, 95);
+  }
+
+  .payment-block {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .sub-total-block {
+    margin-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(158, 214, 67);
+    border-top: 2px solid rgb(163, 163, 163);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .t-s-block {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+  }
+
+  .signature {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .s-sign img {
+    width: 250px;
+  }
+  .s-name {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
